@@ -1,0 +1,220 @@
+.order {
+    position: relative;
+}
+.order-wrapper {
+    left: 0;
+    top: 0;
+    right: 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.16);
+    border-radius: 12px;
+    padding: 16px 10px;
+}
+
+.order-open .order-wrap-list {
+    display: block;
+
+}
+
+.order-open .order-wrap-tittle {
+    margin-bottom: 8px;
+}
+
+.order-tittle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+
+.order-count {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    width: 32px;
+    height: 16px;
+    background-color: #F2F2F3;
+    border-radius:6px ;
+}
+.order-wrap-list {
+    display: none; /*в корзине сделать итог стоимость и доставку в разные стороны  */
+}
+
+.order-wrap-tittle:after {
+    content: '';
+    position: absolute;
+    outline: 3px solid transparent;
+    inset: 0;
+    border-radius:12px ;
+    pointer-events: none;
+}
+
+.order-wrap-tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline:none  ;
+}
+.order-wrap-tittle:focus-visible:after {
+    outline-color:#FFAB08 ;
+}
+
+.order-list {
+margin-bottom: 13px;
+
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0;
+    border-bottom: 1px solid #F2F2F3;
+}
+
+.order-item:first-child {
+    border-top: 1px solid #F2F2F3;
+}
+
+.order-image {
+    width: 64px;
+    height: 52px;
+
+}
+
+.order-product {
+flex-grow: 1;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.order-product-tittle {
+font-weight: 400;
+    margin-bottom: 1px;
+}
+
+.order-product-weight {
+    font-weight: 400;
+    margin-bottom: 6px;
+    color:#B1B1B1;
+}
+
+
+
+
+.order-submit {
+    width: 100%;
+    padding: 9px;
+background-color: #FF7020;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.order-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 19px;
+
+}
+
+.order-wrap-apeal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-apeal {
+    min-height: 24px;
+font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    padding-left: 32px;
+    background: url("../img/free-icon-delivery-2362252.png") left /24px no-repeat;
+}
+
+.order-close {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #B1B1B1;
+}
+
+.order-empty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+@media (min-width:768px ) {
+    .order {
+        max-width: 300px;
+        width: 145px;
+        transition: width 0.06s ease-in-out;
+    }
+    .order.order-open {
+        width: 300px;
+    }
+}
+@media (min-width:1024px ) {
+    .order {
+        width: 300px;
+    }
+    .order-wrapper {
+        position:unset ;
+        padding: 24px 16px;
+    }
+
+    .order-wrap-tittle {
+        margin-bottom: 12px;
+    }
+
+    .order-tittle {
+        font-size: 24px;
+    }
+
+    .order-count {
+        width:41px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .order-total {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .order-submit {
+        padding: 11px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+
+    .order-wrap-list {
+        display:block;
+        margin-bottom: 16px;
+    }
+    .order-close {
+        display: none;
+    }
+
+    .order-apeal {
+       font-size: 12px;
+    }
+
+    .order-item {
+        padding: 15px 0;
+    }
+}

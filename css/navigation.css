@@ -1,0 +1,111 @@
+.navigation {
+    margin-bottom: 30px;
+}
+.navigation-container {
+    padding: 0;
+    min-width: 100vw;
+}
+
+.navigation-list {
+    display: flex;
+    padding: 0 calc(100vw / 2 - var(--container) / 2);
+    overflow-x: auto;
+    overflow-y: hidden;
+    column-gap: 8px;
+}
+
+.navigation-button {
+    background-color: white ;
+    border-radius:50px;
+    padding:7px 8px 7px 40px;
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 8px center;
+
+}
+
+.navigation-button:hover,
+.navigation-button:focus-visible
+{
+    outline: 1px solid #F86310;
+    outline-offset:-1px ;
+}
+
+@supports not selector(:focus-visible) {
+    .navigation-button:focus {
+        outline: 1px solid #F86310;
+        outline-offset:-1px ;
+    }
+}
+
+.navigation-button_active {
+    pointer-events: none;
+    background-color:#FFAB08 ;
+}
+
+.navigation-button_active:focus {
+    outline: none;
+}
+.navigation-button_burger {
+background-image: url("../img/burger.svg");
+}
+
+.navigation-button_combo {
+background-image: url("../img/combo.png");
+}
+
+.navigation-button_dessert {
+background-image: url("../img/dessert.png");
+}
+
+.navigation-button_hotdog {
+background-image: url("../img/hot-dog.png");
+}
+
+.navigation-button_pizza {
+    background-image: url("../img/pizza.png");
+}
+
+.navigation-button_shawarma {
+background-image: url("../img/shawerma.png");
+}
+
+.navigation-button_sause {
+background-image: url("../img/sause.png");
+}
+
+.navigation-button_snack {
+background-image: url("../img/snack.png");
+}
+
+.navigation-button_wok {
+    background-image: url("../img/wok.png");
+}
+
+@media (min-width: 768px) {
+
+    .navigation-list {
+        column-gap: 12px;
+    }
+}
+@media (min-width: 1024px) {
+    .navigation {
+        margin-bottom: 50px;
+    }
+    .navigation-list {
+        column-gap:24px ;
+    }
+    .navigation-button {
+        column-gap: 24px;
+            background-color: white ;
+            padding:9px 14px 9px 46px;
+            font-size: 16px;
+            line-height: 22px;
+            white-space: nowrap;
+            background-position: 14px center;
+
+        }
+    }

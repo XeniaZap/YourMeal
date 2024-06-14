@@ -1,0 +1,36 @@
+.ingr-title {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 130%;
+    margin-bottom: 4px;
+}
+
+.ingr-list {
+    font-weight: 400;
+    font-size: 10px;
+    line-height:130% ;
+    margin-bottom: 4px;
+}
+
+.ingr-item {
+    margin-bottom: 2px;
+}
+
+.ingr-item:last-child {
+    margin-bottom: 0;
+}
+
+.modal-ingr-cal {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 130%;
+    color: #B1B1B1;
+}
+
+@media (min-width: 1024px) {
+.ingr-title,
+    .ingr-list,
+    .modal-ingr-cal {
+        font-size: 12px;
+    }
+}
